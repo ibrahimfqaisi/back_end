@@ -43,7 +43,7 @@ SECRET_KEY = env.str("SECRET_KEY")
 
 DEBUG = env.bool("DEBUG")
 
-ALLOWED_HOSTS = tuple(env.list("ALLOWED_HOSTS"))
+ALLOWED_HOSTS = [tuple(env.list("ALLOWED_HOSTS"))]
 
 
 # Application definition
